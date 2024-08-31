@@ -55,9 +55,9 @@ services:
     command: bash -c "make migrate && make run"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://fastapi:8000/v1/health-check"]
-      interval: 60s
+      interval: 10s
       timeout: 30s
-      retries: 5 
+      retries: 10 
 
   frontend:
     build:
