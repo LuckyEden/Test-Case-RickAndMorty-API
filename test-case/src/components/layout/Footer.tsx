@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                     className="hover:text-secondary-main transition-all"
                 >
                     Locations: {
-                        serviceData.metaData?.location_count}
+                        serviceData.metaData?.location_Count}
                 </a>
                 <a
                     href="#"
