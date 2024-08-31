@@ -5,7 +5,7 @@ const initialState = {
     metaData: {
         character_count: 0,
         episode_count: 0,
-        location_count: 0
+        location_Count: 0
     },
 
     status: "ERROR"
