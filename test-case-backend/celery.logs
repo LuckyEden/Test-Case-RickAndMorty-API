@@ -1,0 +1,596 @@
+[2024-08-29 13:17:03,245: INFO/MainProcess] Connected to amqp://rabbit:**@127.0.0.1:5672//
+[2024-08-29 13:17:03,251: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 13:17:03,420: INFO/SpawnPoolWorker-1] child process 16204 calling self.run()
+[2024-08-29 13:17:04,275: INFO/MainProcess] mingle: all alone
+[2024-08-29 13:17:04,281: WARNING/MainProcess] c:\ProjectHUB\ErayProjects\TestCase\test-case-backend\.venv\Lib\site-packages\kombu\pidbox.py:72: UserWarning: A node named celery@DESKTOP-9V994TT is already using this process mailbox!
+
+Maybe you forgot to shutdown the other node or did not do so properly?
+Or if you meant to start multiple nodes on the same host please make sure
+you give each node a unique node name!
+
+  warnings.warn(W_PIDBOX_IN_USE.format(node=self))
+
+[2024-08-29 13:17:04,288: INFO/MainProcess] celery@DESKTOP-9V994TT ready.
+[2024-08-29 13:17:04,288: INFO/MainProcess] Task background.tasks.loader[aa9c344b-0283-49e3-9e19-6d03d4a81c82] received
+[2024-08-29 13:17:04,288: INFO/MainProcess] Task background.tasks.loader[18c36cb0-818d-4be3-963d-cd91c82c4aad] received
+[2024-08-29 13:17:53,753: INFO/MainProcess] Connected to amqp://rabbit:**@127.0.0.1:5672//
+[2024-08-29 13:17:53,776: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 13:17:53,930: INFO/SpawnPoolWorker-1] child process 32012 calling self.run()
+[2024-08-29 13:17:54,726: INFO/SpawnPoolWorker-2] child process 12460 calling self.run()
+[2024-08-29 13:17:54,821: INFO/MainProcess] mingle: all alone
+[2024-08-29 13:17:54,840: INFO/MainProcess] celery@DESKTOP-9V994TT ready.
+[2024-08-29 13:17:54,841: INFO/MainProcess] Task background.tasks.loader[3dffb073-7f68-4f78-b141-2e7fa544b80a] received
+[2024-08-29 13:17:54,841: INFO/MainProcess] Task background.tasks.loader[ad1f8fc0-e127-437f-a47d-c6211d5d6811] received
+[2024-08-29 13:18:55,277: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2024-08-29 13:18:55,279: DEBUG/MainProcess] | Worker: Building graph...
+[2024-08-29 13:18:55,279: DEBUG/MainProcess] | Worker: New boot order: {StateDB, Timer, Hub, Pool, Autoscaler, Beat, Consumer}
+[2024-08-29 13:18:55,286: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2024-08-29 13:18:55,286: DEBUG/MainProcess] | Consumer: Building graph...
+[2024-08-29 13:18:55,294: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Agent, Events, Heart, Mingle, Tasks, Control, Gossip, event loop}
+[2024-08-29 13:18:55,338: DEBUG/MainProcess] | Worker: Starting Pool
+[2024-08-29 13:18:55,345: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:55,346: DEBUG/MainProcess] | Worker: Starting Consumer
+[2024-08-29 13:18:55,346: DEBUG/MainProcess] | Consumer: Starting Connection
+[2024-08-29 13:18:55,349: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@7099b4014dea', 'copyright': 'Copyright (c) 2007-2021 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.1.2', 'product': 'RabbitMQ', 'version': '3.9.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2024-08-29 13:18:55,351: INFO/MainProcess] Connected to amqp://rabbit:**@127.0.0.1:5672//
+[2024-08-29 13:18:55,351: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:55,351: DEBUG/MainProcess] | Consumer: Starting Events
+[2024-08-29 13:18:55,353: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@7099b4014dea', 'copyright': 'Copyright (c) 2007-2021 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.1.2', 'product': 'RabbitMQ', 'version': '3.9.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2024-08-29 13:18:55,355: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:55,355: DEBUG/MainProcess] | Consumer: Starting Heart
+[2024-08-29 13:18:55,355: DEBUG/MainProcess] using channel_id: 1
+[2024-08-29 13:18:55,356: DEBUG/MainProcess] Channel open
+[2024-08-29 13:18:55,358: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:55,358: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:18:55,358: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2024-08-29 13:18:55,358: INFO/MainProcess] mingle: searching for neighbors
+[2024-08-29 13:18:55,359: DEBUG/MainProcess] using channel_id: 1
+[2024-08-29 13:18:55,360: DEBUG/MainProcess] Channel open
+[2024-08-29 13:18:55,367: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@7099b4014dea', 'copyright': 'Copyright (c) 2007-2021 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.1.2', 'product': 'RabbitMQ', 'version': '3.9.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2024-08-29 13:18:55,369: DEBUG/MainProcess] using channel_id: 1
+[2024-08-29 13:18:55,370: DEBUG/MainProcess] Channel open
+[2024-08-29 13:18:55,425: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-08-29 13:18:55,426: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-08-29 13:18:55,541: INFO/SpawnPoolWorker-1] child process 8420 calling self.run()
+[2024-08-29 13:18:56,030: DEBUG/SpawnPoolWorker-1] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,030: DEBUG/SpawnPoolWorker-1] 
+def loader():
+    return 1
+
+[2024-08-29 13:18:56,031: DEBUG/SpawnPoolWorker-1] 
+def xstarmap(task, it):
+    return 1
+
+[2024-08-29 13:18:56,031: DEBUG/SpawnPoolWorker-1] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,031: DEBUG/SpawnPoolWorker-1] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,031: DEBUG/SpawnPoolWorker-1] 
+def chunks(task, it, n):
+    return 1
+
+[2024-08-29 13:18:56,032: DEBUG/SpawnPoolWorker-1] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,032: DEBUG/SpawnPoolWorker-1] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-08-29 13:18:56,032: DEBUG/SpawnPoolWorker-1] 
+def xmap(task, it):
+    return 1
+
+[2024-08-29 13:18:56,032: DEBUG/SpawnPoolWorker-1] 
+def backend_cleanup():
+    return 1
+
+[2024-08-29 13:18:56,230: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-08-29 13:18:56,230: DEBUG/MainProcess] recreated blocker with handle 32
+[2024-08-29 13:18:56,343: INFO/SpawnPoolWorker-2] child process 5980 calling self.run()
+[2024-08-29 13:18:56,359: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:18:56,381: INFO/MainProcess] mingle: all alone
+[2024-08-29 13:18:56,381: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:56,381: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2024-08-29 13:18:56,386: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:56,386: DEBUG/MainProcess] | Consumer: Starting Control
+[2024-08-29 13:18:56,386: DEBUG/MainProcess] using channel_id: 2
+[2024-08-29 13:18:56,388: DEBUG/MainProcess] Channel open
+[2024-08-29 13:18:56,389: WARNING/MainProcess] c:\ProjectHUB\ErayProjects\TestCase\test-case-backend\.venv\Lib\site-packages\kombu\pidbox.py:72: UserWarning: A node named celery@DESKTOP-9V994TT is already using this process mailbox!
+
+Maybe you forgot to shutdown the other node or did not do so properly?
+Or if you meant to start multiple nodes on the same host please make sure
+you give each node a unique node name!
+
+  warnings.warn(W_PIDBOX_IN_USE.format(node=self))
+
+[2024-08-29 13:18:56,391: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:56,391: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2024-08-29 13:18:56,391: DEBUG/MainProcess] using channel_id: 3
+[2024-08-29 13:18:56,392: DEBUG/MainProcess] Channel open
+[2024-08-29 13:18:56,397: DEBUG/MainProcess] ^-- substep ok
+[2024-08-29 13:18:56,397: DEBUG/MainProcess] | Consumer: Starting event loop
+[2024-08-29 13:18:56,398: INFO/MainProcess] celery@DESKTOP-9V994TT ready.
+[2024-08-29 13:18:56,398: DEBUG/MainProcess] basic.qos: prefetch_count->4
+[2024-08-29 13:18:56,399: INFO/MainProcess] Task background.tasks.loader[aa9c344b-0283-49e3-9e19-6d03d4a81c82] received
+[2024-08-29 13:18:56,399: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x000002101F60A700> (args:('background.tasks.loader', 'aa9c344b-0283-49e3-9e19-6d03d4a81c82', {'lang': 'py', 'task': 'background.tasks.loader', 'id': 'aa9c344b-0283-49e3-9e19-6d03d4a81c82', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'aa9c344b-0283-49e3-9e19-6d03d4a81c82', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen30500@DESKTOP-9V994TT', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'content_type': 'application/json', 'content_encoding': 'utf-8', 'application_headers': {'lang': 'py', 'task': 'background.tasks.loader', 'id': 'aa9c344b-0283-49e3-9e19-6d03d4a81c82', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'aa9c344b-0283-49e3-9e19-6d03d4a81c82', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen30500@DESKTOP-9V994TT', 'ignore_result': False,... kwargs:{})
+[2024-08-29 13:18:56,399: INFO/MainProcess] Task background.tasks.loader[18c36cb0-818d-4be3-963d-cd91c82c4aad] received
+[2024-08-29 13:18:56,421: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x000002101F60A700> (args:('background.tasks.loader', '18c36cb0-818d-4be3-963d-cd91c82c4aad', {'lang': 'py', 'task': 'background.tasks.loader', 'id': '18c36cb0-818d-4be3-963d-cd91c82c4aad', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '18c36cb0-818d-4be3-963d-cd91c82c4aad', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen30500@DESKTOP-9V994TT', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'content_type': 'application/json', 'content_encoding': 'utf-8', 'application_headers': {'lang': 'py', 'task': 'background.tasks.loader', 'id': '18c36cb0-818d-4be3-963d-cd91c82c4aad', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '18c36cb0-818d-4be3-963d-cd91c82c4aad', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen30500@DESKTOP-9V994TT', 'ignore_result': False,... kwargs:{})
+[2024-08-29 13:18:56,828: DEBUG/SpawnPoolWorker-2] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,828: DEBUG/SpawnPoolWorker-2] 
+def loader():
+    return 1
+
+[2024-08-29 13:18:56,828: DEBUG/SpawnPoolWorker-2] 
+def xstarmap(task, it):
+    return 1
+
+[2024-08-29 13:18:56,829: DEBUG/SpawnPoolWorker-2] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,829: DEBUG/SpawnPoolWorker-2] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,829: DEBUG/SpawnPoolWorker-2] 
+def chunks(task, it, n):
+    return 1
+
+[2024-08-29 13:18:56,829: DEBUG/SpawnPoolWorker-2] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-08-29 13:18:56,829: DEBUG/SpawnPoolWorker-2] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-08-29 13:18:56,830: DEBUG/SpawnPoolWorker-2] 
+def xmap(task, it):
+    return 1
+
+[2024-08-29 13:18:56,830: DEBUG/SpawnPoolWorker-2] 
+def backend_cleanup():
+    return 1
+
+[2024-08-29 13:18:56,858: INFO/MainProcess] Task background.tasks.loader[22c675da-a384-4087-80e0-255061e29bdf] received
+[2024-08-29 13:18:56,858: DEBUG/MainProcess] TaskPool: Apply <function fast_trace_task at 0x000002101F60A700> (args:('background.tasks.loader', '22c675da-a384-4087-80e0-255061e29bdf', {'lang': 'py', 'task': 'background.tasks.loader', 'id': '22c675da-a384-4087-80e0-255061e29bdf', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '22c675da-a384-4087-80e0-255061e29bdf', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen30500@DESKTOP-9V994TT', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}, 'properties': {'content_type': 'application/json', 'content_encoding': 'utf-8', 'application_headers': {'lang': 'py', 'task': 'background.tasks.loader', 'id': '22c675da-a384-4087-80e0-255061e29bdf', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '22c675da-a384-4087-80e0-255061e29bdf', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen30500@DESKTOP-9V994TT', 'ignore_result': False,... kwargs:{})
+[2024-08-29 13:18:56,933: DEBUG/MainProcess] recreated blocker with handle 24
+[2024-08-29 13:18:56,933: DEBUG/MainProcess] recreated blocker with handle 28
+[2024-08-29 13:18:57,046: INFO/SpawnPoolWorker-3] child process 7848 calling self.run()
+[2024-08-29 13:18:57,360: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:18:57,508: DEBUG/SpawnPoolWorker-3] 
+def chain(*args, **kwargs):
+    return 1
+
+[2024-08-29 13:18:57,508: DEBUG/SpawnPoolWorker-3] 
+def loader():
+    return 1
+
+[2024-08-29 13:18:57,509: DEBUG/SpawnPoolWorker-3] 
+def xstarmap(task, it):
+    return 1
+
+[2024-08-29 13:18:57,509: DEBUG/SpawnPoolWorker-3] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[2024-08-29 13:18:57,509: DEBUG/SpawnPoolWorker-3] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[2024-08-29 13:18:57,510: DEBUG/SpawnPoolWorker-3] 
+def chunks(task, it, n):
+    return 1
+
+[2024-08-29 13:18:57,510: DEBUG/SpawnPoolWorker-3] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[2024-08-29 13:18:57,510: DEBUG/SpawnPoolWorker-3] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[2024-08-29 13:18:57,511: DEBUG/SpawnPoolWorker-3] 
+def xmap(task, it):
+    return 1
+
+[2024-08-29 13:18:57,511: DEBUG/SpawnPoolWorker-3] 
+def backend_cleanup():
+    return 1
+
+[2024-08-29 13:18:58,361: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:18:59,362: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:00,363: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:01,364: DEBUG/MainProcess] Timer wake-up! Next ETA 0.03200000000651926 secs.
+[2024-08-29 13:19:01,396: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:02,397: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9529999999795109 secs.
+[2024-08-29 13:19:03,351: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:04,351: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:05,351: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:06,352: DEBUG/MainProcess] Timer wake-up! Next ETA 0.0470000000204891 secs.
+[2024-08-29 13:19:06,401: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9529999999795109 secs.
+[2024-08-29 13:19:07,354: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:08,355: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:09,356: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:10,357: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:11,357: DEBUG/MainProcess] Timer wake-up! Next ETA 0.0470000000204891 secs.
+[2024-08-29 13:19:11,406: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:12,406: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9529999999795109 secs.
+[2024-08-29 13:19:13,360: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:14,361: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:15,363: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:16,364: DEBUG/MainProcess] Timer wake-up! Next ETA 0.0470000000204891 secs.
+[2024-08-29 13:19:16,411: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9529999999795109 secs.
+[2024-08-29 13:19:17,365: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:18,365: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:19,366: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:20,367: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:21,367: DEBUG/MainProcess] Timer wake-up! Next ETA 0.031000000017229468 secs.
+[2024-08-29 13:19:21,399: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:22,400: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9689999999827705 secs.
+[2024-08-29 13:19:23,370: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:24,371: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:25,371: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:26,373: DEBUG/MainProcess] Timer wake-up! Next ETA 0.031000000017229468 secs.
+[2024-08-29 13:19:26,405: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9689999999827705 secs.
+[2024-08-29 13:19:27,374: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:28,375: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:29,375: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:30,377: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:31,377: DEBUG/MainProcess] Timer wake-up! Next ETA 0.031000000017229468 secs.
+[2024-08-29 13:19:31,409: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:32,410: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9689999999827705 secs.
+[2024-08-29 13:19:33,379: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:34,380: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:19:35,366: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:36,367: DEBUG/MainProcess] Timer wake-up! Next ETA 0.031000000017229468 secs.
+[2024-08-29 13:19:36,398: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9689999999827705 secs.
+[2024-08-29 13:19:37,367: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:38,369: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:39,370: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:40,371: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:41,371: DEBUG/MainProcess] Timer wake-up! Next ETA 0.031000000017229468 secs.
+[2024-08-29 13:19:41,403: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:42,403: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9689999999827705 secs.
+[2024-08-29 13:19:43,373: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:44,373: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:45,374: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:46,375: DEBUG/MainProcess] Timer wake-up! Next ETA 0.031000000017229468 secs.
+[2024-08-29 13:19:46,407: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9689999999827705 secs.
+[2024-08-29 13:19:47,377: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:48,378: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:49,379: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:50,379: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:51,380: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:19:51,396: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:52,396: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:19:53,382: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:54,383: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:55,384: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:56,385: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:19:56,401: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:19:57,387: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:58,387: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:19:59,388: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:00,389: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:01,389: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:20:01,404: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:02,405: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:20:03,391: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:04,392: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:05,393: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:06,394: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:20:06,409: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:20:07,395: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:08,396: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:09,396: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:10,397: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:11,398: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:12,399: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:13,400: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:14,401: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:15,402: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:16,402: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:17,404: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:18,405: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:19,406: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:20,406: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:21,407: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:22,408: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:23,409: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:24,410: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:25,411: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:26,412: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:20:27,396: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:28,397: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:29,398: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:30,399: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:31,399: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:20:31,416: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:32,417: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:20:33,401: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:34,403: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:35,404: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:36,404: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:20:36,421: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:20:37,406: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:38,407: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:39,407: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:40,408: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:41,409: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:20:41,426: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:42,427: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9690000000409782 secs.
+[2024-08-29 13:20:43,397: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:44,398: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:45,398: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:46,399: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:20:46,416: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:20:47,401: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:48,401: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:49,402: DEBUG/MainProcess] Closed channel #1
+[2024-08-29 13:20:58,477: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@7099b4014dea', 'copyright': 'Copyright (c) 2007-2021 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.1.2', 'product': 'RabbitMQ', 'version': '3.9.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2024-08-29 13:20:58,509: DEBUG/MainProcess] using channel_id: 1
+[2024-08-29 13:20:58,512: DEBUG/MainProcess] Channel open
+[2024-08-29 13:20:58,516: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:20:59,517: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:00,517: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:01,519: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:02,520: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:03,521: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:04,507: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:05,507: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:06,508: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:07,509: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:08,510: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:08,525: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:09,526: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:10,512: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:11,512: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:12,513: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:13,514: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:13,529: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:14,515: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:15,515: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:16,516: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:17,518: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:18,518: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:18,534: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:19,535: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:20,521: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:21,521: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:22,508: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:23,508: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:23,524: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:24,509: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:25,510: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:26,510: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:27,512: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:28,512: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:28,528: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:29,529: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:30,515: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:31,516: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:32,517: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:33,518: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:33,534: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:34,520: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:35,521: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:36,507: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:37,508: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:38,509: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:38,524: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:39,524: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:40,511: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:41,512: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:42,512: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:43,514: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:43,529: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:44,514: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:45,515: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:46,517: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:47,518: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:48,519: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:21:48,535: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:49,535: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:21:50,521: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:51,522: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:52,523: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:53,524: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:54,525: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:55,525: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:56,526: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:57,527: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:58,529: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:21:59,529: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:00,531: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:01,531: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:02,532: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:03,534: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:04,535: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:05,535: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:06,536: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:07,537: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:22:08,522: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:09,523: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:10,523: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:11,524: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:12,525: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:13,526: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:14,527: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:15,527: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:16,529: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:17,529: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:18,530: DEBUG/MainProcess] Closed channel #1
+[2024-08-29 13:22:27,658: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@7099b4014dea', 'copyright': 'Copyright (c) 2007-2021 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.1.2', 'product': 'RabbitMQ', 'version': '3.9.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2024-08-29 13:22:27,659: DEBUG/MainProcess] using channel_id: 1
+[2024-08-29 13:22:27,660: DEBUG/MainProcess] Channel open
+[2024-08-29 13:22:27,661: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:28,662: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:22:29,646: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:30,647: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:31,648: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:32,649: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:33,650: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:34,650: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:35,651: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:36,652: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:37,653: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:38,654: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:39,654: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:40,655: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:41,656: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:42,657: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:43,657: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:44,658: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:45,659: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:46,660: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:47,661: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:48,662: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:22:49,647: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:50,648: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:51,649: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:52,650: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:53,651: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:54,652: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:55,653: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:56,653: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:57,655: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:58,655: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:22:59,656: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:00,656: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:01,657: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:02,658: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:03,659: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:04,660: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:05,661: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:06,662: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:23:07,647: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:08,648: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:09,650: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:10,651: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:11,652: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:12,652: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:13,653: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:14,654: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:15,655: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:16,655: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:17,656: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:18,657: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:19,657: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:20,658: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:21,659: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:22,659: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:23,660: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:24,661: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:25,663: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:26,664: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:23:27,649: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:23:27,666: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:28,667: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:29,668: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:30,669: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:31,671: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:23:32,656: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:33,657: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:23:33,674: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:34,674: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:35,675: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:23:36,676: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:23:37,661: DEBUG/MainProcess] Timer wake-up! Next ETA 0.01600000000325963 secs.
+[2024-08-29 13:23:37,678: DEBUG/MainProcess] Closed channel #1
+[2024-08-29 13:24:22,139: DEBUG/MainProcess] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@7099b4014dea', 'copyright': 'Copyright (c) 2007-2021 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.1.2', 'product': 'RabbitMQ', 'version': '3.9.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[2024-08-29 13:24:22,141: DEBUG/MainProcess] using channel_id: 1
+[2024-08-29 13:24:22,142: DEBUG/MainProcess] Channel open
+[2024-08-29 13:24:22,143: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:23,143: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:24,144: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:25,146: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:26,147: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:24:27,132: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:28,133: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:24:28,149: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:29,150: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:30,151: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:31,152: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:24:32,138: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:24:32,153: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:33,154: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:34,155: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:35,155: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:36,156: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:24:37,141: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:38,141: DEBUG/MainProcess] Timer wake-up! Next ETA 0.015000000013969839 secs.
+[2024-08-29 13:24:38,158: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:39,158: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:40,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:41,161: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9849999999860302 secs.
+[2024-08-29 13:24:42,146: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:43,147: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:44,148: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:45,149: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:46,150: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:47,151: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:48,152: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:49,153: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:50,154: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:51,154: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:52,156: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:53,156: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:54,158: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:55,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:56,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:57,161: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:58,162: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:24:59,163: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:25:00,147: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:01,148: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:02,148: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:03,149: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:04,149: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:05,150: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:06,151: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:07,151: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:08,152: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:09,153: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:10,154: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:11,155: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:12,155: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:13,156: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:14,157: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:15,157: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:16,158: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:17,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:18,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:19,161: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:20,161: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:21,162: DEBUG/MainProcess] Timer wake-up! Next ETA 0.9839999999967404 secs.
+[2024-08-29 13:25:22,147: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:23,147: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:24,148: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:25,148: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:26,149: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:27,151: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:28,152: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:29,152: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:30,153: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:31,154: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:32,154: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:33,155: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:34,156: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:35,157: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:36,157: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:37,158: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:38,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:39,159: DEBUG/MainProcess] Timer wake-up! Next ETA 1.0 secs.
+[2024-08-29 13:25:40,160: DEBUG/MainProcess] Closed channel #1

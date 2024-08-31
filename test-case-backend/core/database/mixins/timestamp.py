@@ -1,0 +1,10 @@
+
+from sqlalchemy import Column, DateTime, func
+from sqlalchemy.ext.declarative import declared_attr
+
+
+class TimestampMixin:
+    @declared_attr
+    def created(cls):
+        return Column(DateTime, default=func.now(), nullable=False)
+ 

@@ -1,0 +1,8 @@
+# Env files
+.env
+.env.local
+
+# __pycache__ files
+__pycache__
+
+# Celery files

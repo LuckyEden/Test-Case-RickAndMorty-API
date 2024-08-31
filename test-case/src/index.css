@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font: 112.5%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol' !important;
+}
+
+header {
+  @apply flex items-center ;
+}
+
+
+
+#root {
+  /*width: 100vw;*/
+  height: 100vh;
+}
+
+.sc{
+  @apply py-12
+}
+
+.sc.sc__l{
+  @apply bg-primary-light;
+}
+
+.sc.sc__d{
+  @apply bg-primary-dark;
+}
+
+/* Home Icon - Start */
+
+.home-icon {
+  @apply cursor-pointer transition-all 
+}
+
+.home-icon>svg {
+  fill: rgb(51, 51, 51);
+ @apply transition-all;
+}
+
+.home-icon:hover {
+  @apply drop-shadow-md;
+}
+
+.home-icon:hover>svg {
+  @apply fill-secondary-main
+}
+
+/* Home Icon - End */
+
+/* Hero Area - Start */
+.hero-image {
+  @apply w-full h-full absolute flex justify-center items-end -z-10
+}
+
+.hero-image>svg {
+  fill: rgb(245, 245, 245)
+}
+
+.focus-search-box { 
+ 
+}
+
+.focus-search-box > .search__box {
+  @apply shadow-lg
+}
+
+.focus-search-box > .search__box__backdrop{ 
+  @apply  bg-black bg-opacity-50 -z-10
+}
+
+.search__icon{
+  @apply cursor-pointer transition-all text-link hover:text-secondary-main active:scale-90
+}
+
+/* Hero Area - End */
+
+/* Menu - Start */
+ 
+
+header > #menu > ul { 
+  @apply list-none flex flex-row gap-4 uppercase text-link;
+}
+
+header > #menu > ul > li {
+  @apply cursor-pointer font-[600] transition-all relative before:w-0 before:h-0 before:transition-all after:scale-0 after:transition-all after:duration-300 before:duration-500;
+}
+
+header > #menu > ul > li:hover {
+  @apply text-secondary-main;
+}
+
+header > #menu > ul > li.active {
+  @apply 
+  before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-full before:h-px before:bg-secondary-main
+  after:absolute after:-bottom-1 after:left-1/2 after:w-2 after:h-2 after:scale-100 after:-translate-x-1/2 after:bg-secondary-main after:rounded-full
+  ;
+}
+
+/* Status Badge */
+
+.status-badge {
+  @apply rounded-full w-2 h-2 text-xs font-bold text-white;
+}
+
+.status-badge--active {
+  @apply bg-green-500;
+}
+
+.status-badge--inactive {
+  @apply bg-red-500;
+}
+
+/* Select Input */
+
+.select-input {
+  @apply cursor-pointer;
+}
+
+.select-input > select {
+  @apply appearance-none bg-transparent border-none text-link;
+}
+
+/* Select Input - End */
+
+
+.to-up {
+  @apply cursor-pointer hidden fixed bottom-4 right-4 z-50 bg-secondary-main text-white rounded-full p-2 shadow-lg;
+}
+
+.to-up--visible {
+  @apply block;
+}
